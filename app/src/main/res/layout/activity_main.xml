@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txt_nota1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Nota"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Calculo"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/txt_nota2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nota"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nota1"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/txt_nota3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nota"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nota2"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/txt_nota4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nota"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nota3"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="calcular"
+        android:text="Calcular"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nota4"
+        tools:layout_editor_absoluteX="137dp" />
+
+    <TextView
+        android:id="@+id/txt_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alumno"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_calcular"
+        tools:layout_editor_absoluteX="136dp" />
+
+    <TextView
+        android:id="@+id/txt_Calculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULO NOTAS"
+        android:textSize="34sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="74dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
